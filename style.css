@@ -22,6 +22,8 @@
   --main-accent: #c0282e;
   --soft-accent: #8b0000;
   --border-color: #2a2018;
+  --sub-color: #a08878;
+  --back-color-dark: #1a1208;
 }
 
 /*Style global*/
@@ -741,6 +743,10 @@ button {
   color: var(--main-color);
   width: 650px;
   font-size: 18px;
+  margin: 0;
+}
+.text-mentions {
+  margin: 0;
 }
 
 /*page CV*/
@@ -1256,4 +1262,44 @@ button {
     flex-direction: column;
     gap: 20px;
   }
+  /* ── MENTIONS LÉGALES ── */
+  .mentions-titles {
+    padding: 0 16px;
+    text-align: center;
+  }
+
+  .info-value {
+    padding: 0 16px;
+  }
+
+  .name-mention,
+  .statut-mention,
+  .mail-mention,
+  .hebergeur-mention,
+  .address-mention {
+    flex-direction: column;
+    gap: 4px;
+  }
+
+  .propriete-rule,
+  .data-rule {
+    font-size: 14px;
+    padding: 0 16px;
+  }
+}
+/*────────────────────────────────────MODE DARK BUTTONPART ────────────────────────────────────*/
+.toggle-btn {
+  background: none;
+  border: 1px solid var(--border-color);
+  color: var(--main-color);
+  cursor: pointer;
+  font-size: 16px;
+  padding: 4px 10px;
+  margin-top: 0;
+  font-family: var(--secondary-font);
+}
+
+.toggle-btn:hover {
+  border-color: var(--main-accent);
+  color: var(--main-accent);
 }
