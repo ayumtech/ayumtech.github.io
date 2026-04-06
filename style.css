@@ -741,9 +741,13 @@ button {
   justify-content: center;
   font-family: var(--tertiary-font);
   color: var(--main-color);
-  width: 650px;
+  width: 100%;
+  max-width: 650px;
   font-size: 18px;
   margin: 0;
+  padding: 0 20px;
+  box-sizing: border-box;
+  line-height: 1.8;
 }
 .text-mentions {
   margin: 0;
@@ -1262,29 +1266,25 @@ button {
     flex-direction: column;
     gap: 20px;
   }
-  /* ── MENTIONS LÉGALES ── */
-  .mentions-titles {
-    padding: 0 16px;
-    text-align: center;
+  /* MENTIONS LÉGALES */
+  .mentions-title {
+    font-size: 32px;
   }
-
-  .info-value {
-    padding: 0 16px;
-  }
-
-  .name-mention,
-  .statut-mention,
   .mail-mention,
-  .hebergeur-mention,
-  .address-mention {
-    flex-direction: column;
-    gap: 4px;
+  .hebergeur-mention {
+    gap: 60px;
   }
-
-  .propriete-rule,
-  .data-rule {
-    font-size: 14px;
-    padding: 0 16px;
+  .text {
+    font-size: 18px;
+  }
+  .mentions-label::before {
+    width: 100%;
+  }
+  .mentions-label::after {
+    width: 100%;
+  }
+  .label::after {
+    width: 155px;
   }
 }
 /*────────────────────────────────────MODE DARK BUTTONPART ────────────────────────────────────*/
