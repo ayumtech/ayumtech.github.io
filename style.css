@@ -1289,7 +1289,7 @@ button {
 }
 /*────────────────────────────────────MODE DARK BUTTONPART ────────────────────────────────────*/
 .toggle-btn {
-  background: none; 
+  background: none;
   border: 1px solid var(--border-color);
   color: var(--main-color);
   cursor: pointer;
